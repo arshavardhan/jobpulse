@@ -1,0 +1,29 @@
+Alex Chen
+San Francisco, CA | alex.chen@example.com | +1 (555) 349-2019 | linkedin.com/in/alexchen-ai | github.com/alexchen-ai
+
+PROFESSIONAL SUMMARY
+Autonomous Systems & Machine Learning Engineer with 3+ years of experience building multi-agent architectures, LLM pipelines, and production NLP services. Proficient in Python, PyTorch, LangChain, LangGraph, and vector databases (Qdrant, Pinecone). Proven track record of architecting scalable retrieval-augmented generation (RAG) systems and automated web scrapers delivering 99.5% uptime.
+
+CORE TECHNICAL SKILLS
+• Languages: Python, SQL, TypeScript, Bash
+• AI/ML & LLM: PyTorch, LangChain, LangGraph, HuggingFace Transformers, scikit-learn, OpenAI API, Gemini API, RAG, Agentic AI, NLP, Vector Databases (Qdrant, Chroma)
+• Web & APIs: FastAPI, Flask, REST API, Pydantic, Web Scraping, BeautifulSoup, Playwright, Selenium
+• Infrastructure & Data: Docker, Kubernetes, PostgreSQL, Redis, Git, CI/CD, Linux, AWS, pandas, numpy
+
+WORK EXPERIENCE
+Cognitive Systems Lab — Senior AI Agent Engineer
+March 2023 – Present | Remote
+• Architected an autonomous multi-agent web scraping and intelligence pipeline using LangGraph, Python, and Playwright, extracting and structuring 250,000+ commercial data points weekly.
+• Engineered a production hybrid search RAG framework utilizing Qdrant vector database and BM25 indexing, improving search precision by 42%.
+• Built high-throughput microservices using FastAPI, Docker, and Redis caching, handling 1.5M requests/day with sub-80ms p95 latency.
+• Mentored 4 junior engineers on clean agentic workflows, prompt evaluation metrics, and automated unit testing.
+
+FinTech Insights Corp — Machine Learning & Analytics Developer
+June 2021 – February 2023 | New York, NY
+• Developed predictive analytics pipelines using scikit-learn, pandas, and PyTorch for time-series forecasting across financial datasets.
+• Implemented automated web scraping tools using BeautifulSoup and Selenium to harvest market sentiment and earnings reports.
+• Designed interactive analytical dashboards with Plotly and Streamlit for executive stakeholders.
+
+EDUCATION & CERTIFICATIONS
+• B.S. in Computer Science — University of California, Berkeley (2021)
+• DeepLearning.AI Generative AI with LLMs Certification (2023)

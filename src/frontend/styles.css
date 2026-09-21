@@ -1,0 +1,519 @@
+/**
+ * JobPulse - Cyber Nebula / Deep Space Dark Theme
+ * "Real jobs. Live opportunities. One place."
+ * Palette: Electric Ice Cyan, Deep Nebula Indigo, Cool Emerald, Obsidian Glass.
+ */
+
+:root {
+  --jp-bg-page: #06080d;
+  --jp-bg-surface: #0b101b;
+  --jp-bg-elevated: #111827;
+  --jp-bg-card: #0e1422;
+  --jp-border-subtle: #1a2336;
+  --jp-border-card: #223048;
+  --jp-border-glow: rgba(56, 189, 248, 0.35);
+
+  --jp-text-primary: #f8fafc;
+  --jp-text-secondary: #94a3b8;
+  --jp-text-muted: #64748b;
+
+  --jp-cyan-neon: #00f2fe;
+  --jp-cyan: #38bdf8;
+  --jp-blue: #0ea5e9;
+  --jp-indigo: #6366f1;
+  --jp-violet: #a855f7;
+  --jp-emerald: #10b981;
+  --jp-amber: #f59e0b;
+  --jp-rose: #f43f5e;
+
+  --jp-gradient-brand: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  --jp-gradient-cyan-btn: linear-gradient(135deg, #0ea5e9 0%, #2563eb 50%, #6366f1 100%);
+  --jp-gradient-cyan-hover: linear-gradient(135deg, #38bdf8 0%, #3b82f6 50%, #4f46e5 100%);
+  --jp-gradient-accent: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--jp-bg-page) !important;
+  color: var(--jp-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--jp-bg-page) !important;
+  color: var(--jp-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbars */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: #06080d;
+}
+*::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Typography & Brand Gradients */
+.jp-gradient-text {
+  background: var(--jp-gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.jp-accent-text {
+  background: var(--jp-gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Pulsing Status Dot */
+.status-dot-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  animation: jp-pulse-cyan 2s infinite;
+}
+
+@keyframes jp-pulse-cyan {
+  0% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(56, 189, 248, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--jp-gradient-cyan-btn);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.35);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--jp-gradient-cyan-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(56, 189, 248, 0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: #e2e8f0;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: #1e293b;
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.btn-outline-cyan {
+  background: transparent;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 6px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-cyan:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+/* Navigation active indicator */
+.nav-btn-active {
+  color: #38bdf8 !important;
+  background-color: rgba(14, 165, 233, 0.15) !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  box-shadow: 0 2px 10px rgba(14, 165, 233, 0.2);
+}
+
+/* Filter pills */
+.pill-filter {
+  background-color: #0b101b;
+  border: 1px solid #1e293b;
+  color: #94a3b8;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.pill-filter:hover {
+  border-color: #38bdf8;
+  color: #f8fafc;
+}
+
+.pill-filter.active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.25);
+}
+
+/* Job Cards */
+.job-card {
+  background-color: #0b101b;
+  border: 1px solid #1a2336;
+  border-radius: 14px;
+  padding: 18px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.job-card:hover {
+  border-color: #38bdf8;
+  background-color: #0f1626;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px -3px rgba(56, 189, 248, 0.18);
+}
+
+/* Direct apply external link */
+.link-direct-apply {
+  background: linear-gradient(135deg, #0ea5e9 0%, #059669 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(14, 165, 233, 0.25);
+}
+
+.link-direct-apply:hover {
+  background: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
+  color: #ffffff;
+}
+
+/* Modals */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(6, 8, 13, 0.88);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-content {
+  background-color: #0b101b;
+  border: 1px solid #223048;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 30px rgba(56, 189, 248, 0.12);
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Source badge styles */
+.badge-direct-ats {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-verified-live {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-auth-req {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Mobile drawer */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(6, 8, 13, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 45;
+}
+
+.drawer-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  max-width: 80vw;
+  background-color: #0b101b;
+  border-left: 1px solid #1a2336;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.25s ease;
+}
+
+.drawer-hidden {
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+/* Cyber Terminal for Auto-Apply Bot */
+.cyber-terminal {
+  background-color: #030508;
+  border: 1px solid #1a2336;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+.terminal-header {
+  background-color: #0b101b;
+  border-bottom: 1px solid #1a2336;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.terminal-body {
+  padding: 14px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.terminal-log-line {
+  animation: fadeInLog 0.2s ease-in-out;
+}
+
+@keyframes fadeInLog {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Feature Comparison Table */
+.matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.matrix-table th, .matrix-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1a2336;
+}
+
+.matrix-table tr:hover td {
+  background-color: rgba(14, 20, 34, 0.4);
+}
+
+.feature-check {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.feature-cross {
+  color: #f43f5e;
+}
+
+/* ==========================================================================
+   Agent Hub & 9-Stage Autonomous Engine Styles
+   ========================================================================== */
+.agent-tab-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  background-color: #0b101b;
+  border: 1px solid #1a2336;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.agent-tab-btn:hover {
+  color: #f8fafc;
+  background-color: #111827;
+  border-color: #223048;
+}
+.agent-tab-active {
+  color: #38bdf8 !important;
+  background-color: rgba(56, 189, 248, 0.12) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.15);
+}
+
+/* 9-Stage Timeline Visuals */
+.timeline-item {
+  position: relative;
+  padding-left: 36px;
+  padding-bottom: 24px;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+.timeline-line {
+  position: absolute;
+  left: 14px;
+  top: 28px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.4) 0%, rgba(99, 102, 241, 0.2) 100%);
+}
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+.timeline-dot {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background-color: #06080d;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+/* Stage Badge Classes */
+.stage-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stage-job-found { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+.stage-job-analyzed { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
+.stage-resume-customized { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+.stage-app-submitted { background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.3); }
+.stage-hr-found { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+.stage-email-sent { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.stage-recruiter-replied { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+.stage-response-analyzed { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
+.stage-outcome-interview { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.5); }
+.stage-outcome-rejection { background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+
+/* LaTeX Code Viewer Box */
+.latex-code-box {
+  background-color: #030508;
+  border: 1px solid #1a2336;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  white-space: pre;
+  overflow-x: auto;
+  max-height: 480px;
+}

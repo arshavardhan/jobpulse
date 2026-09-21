@@ -1,0 +1,21 @@
+Priya Sharma
+Bengaluru, India | priya.sharma@example.com | +91 98765 43210 | github.com/priyasharma-dev
+
+PROFESSIONAL SUMMARY
+Full Stack Engineer with 2.5 years of experience engineering high-performance web applications, distributed APIs, and data aggregation platforms. Expert in Python, FastAPI, React, TypeScript, and PostgreSQL. Experienced in integrating generative AI models and building resilient web scrapers.
+
+TECHNICAL SKILLS
+• Frontend: React, Next.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3
+• Backend: Python, FastAPI, Django, REST API, GraphQL, Node.js
+• Databases: PostgreSQL, MongoDB, Redis, SQL
+• Tools & DevOps: Docker, Git, CI/CD, Linux, AWS, BeautifulSoup, Selenium
+
+EXPERIENCE
+NexGen Web Labs — Full Stack Developer
+August 2022 – Present | Bengaluru
+• Developed responsive SaaS portals using React, TypeScript, and Tailwind CSS, increasing user engagement by 30%.
+• Built scalable backend microservices using FastAPI, SQLAlchemy, and PostgreSQL.
+• Created automated data ingestion scripts with BeautifulSoup to aggregate partner product catalogs.
+
+EDUCATION
+• B.Tech in Information Technology — National Institute of Technology (2022)

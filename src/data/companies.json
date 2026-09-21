@@ -1,0 +1,302 @@
+[
+  {
+    "company_name": "Meesho",
+    "website": "https://meesho.com",
+    "careers_url": "https://jobs.lever.co/meesho",
+    "detected_ats": "lever",
+    "slug": "meesho",
+    "country": "India",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "CRED",
+    "website": "https://cred.club",
+    "careers_url": "https://jobs.lever.co/cred",
+    "detected_ats": "lever",
+    "slug": "cred",
+    "country": "India",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Postman",
+    "website": "https://www.postman.com",
+    "careers_url": "https://jobs.lever.co/postman",
+    "detected_ats": "lever",
+    "slug": "postman",
+    "country": "India",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "BrowserStack",
+    "website": "https://www.browserstack.com",
+    "careers_url": "https://jobs.lever.co/browserstack",
+    "detected_ats": "lever",
+    "slug": "browserstack",
+    "country": "India",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Kraken",
+    "website": "https://www.kraken.com",
+    "careers_url": "https://jobs.lever.co/kraken",
+    "detected_ats": "lever",
+    "slug": "kraken",
+    "country": "Global",
+    "priority": 2,
+    "enabled": true
+  },
+  {
+    "company_name": "Nexthink",
+    "website": "https://www.nexthink.com",
+    "careers_url": "https://jobs.lever.co/nexthink",
+    "detected_ats": "lever",
+    "slug": "nexthink",
+    "country": "Global",
+    "priority": 2,
+    "enabled": true
+  },
+  {
+    "company_name": "Figma",
+    "website": "https://www.figma.com",
+    "careers_url": "https://boards.greenhouse.io/figma",
+    "detected_ats": "greenhouse",
+    "slug": "figma",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "GitLab",
+    "website": "https://about.gitlab.com",
+    "careers_url": "https://boards.greenhouse.io/gitlab",
+    "detected_ats": "greenhouse",
+    "slug": "gitlab",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Stripe",
+    "website": "https://stripe.com",
+    "careers_url": "https://boards.greenhouse.io/stripe",
+    "detected_ats": "greenhouse",
+    "slug": "stripe",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Cloudflare",
+    "website": "https://www.cloudflare.com",
+    "careers_url": "https://boards.greenhouse.io/cloudflare",
+    "detected_ats": "greenhouse",
+    "slug": "cloudflare",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Datadog",
+    "website": "https://www.datadoghq.com",
+    "careers_url": "https://boards.greenhouse.io/datadog",
+    "detected_ats": "greenhouse",
+    "slug": "datadog",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Miro",
+    "website": "https://miro.com",
+    "careers_url": "https://boards.greenhouse.io/miro",
+    "detected_ats": "greenhouse",
+    "slug": "miro",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Brex",
+    "website": "https://www.brex.com",
+    "careers_url": "https://boards.greenhouse.io/brex",
+    "detected_ats": "greenhouse",
+    "slug": "brex",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Discord",
+    "website": "https://discord.com",
+    "careers_url": "https://boards.greenhouse.io/discord",
+    "detected_ats": "greenhouse",
+    "slug": "discord",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Canva",
+    "website": "https://www.canva.com",
+    "careers_url": "https://boards.greenhouse.io/canva",
+    "detected_ats": "greenhouse",
+    "slug": "canva",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Automattic",
+    "website": "https://automattic.com",
+    "careers_url": "https://boards.greenhouse.io/automattic",
+    "detected_ats": "greenhouse",
+    "slug": "automattic",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Instacart",
+    "website": "https://www.instacart.com",
+    "careers_url": "https://boards.greenhouse.io/instacart",
+    "detected_ats": "greenhouse",
+    "slug": "instacart",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Twilio",
+    "website": "https://www.twilio.com",
+    "careers_url": "https://boards.greenhouse.io/twilio",
+    "detected_ats": "greenhouse",
+    "slug": "twilio",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "DoorDash",
+    "website": "https://www.doordash.com",
+    "careers_url": "https://boards.greenhouse.io/doordash",
+    "detected_ats": "greenhouse",
+    "slug": "doordash",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Supabase",
+    "website": "https://supabase.com",
+    "careers_url": "https://boards.greenhouse.io/supabase",
+    "detected_ats": "greenhouse",
+    "slug": "supabase",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Reddit",
+    "website": "https://www.reddit.com",
+    "careers_url": "https://boards.greenhouse.io/reddit",
+    "detected_ats": "greenhouse",
+    "slug": "reddit",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Linear",
+    "website": "https://linear.app",
+    "careers_url": "https://jobs.ashbyhq.com/linear",
+    "detected_ats": "ashby",
+    "slug": "linear",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Ramp",
+    "website": "https://ramp.com",
+    "careers_url": "https://jobs.ashbyhq.com/ramp",
+    "detected_ats": "ashby",
+    "slug": "ramp",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Retool",
+    "website": "https://retool.com",
+    "careers_url": "https://jobs.ashbyhq.com/retool",
+    "detected_ats": "ashby",
+    "slug": "retool",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Synthesia",
+    "website": "https://www.synthesia.io",
+    "careers_url": "https://jobs.ashbyhq.com/synthesia",
+    "detected_ats": "ashby",
+    "slug": "synthesia",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Cursor",
+    "website": "https://cursor.com",
+    "careers_url": "https://jobs.ashbyhq.com/anysphere",
+    "detected_ats": "ashby",
+    "slug": "anysphere",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Superhuman",
+    "website": "https://superhuman.com",
+    "careers_url": "https://jobs.ashbyhq.com/superhuman",
+    "detected_ats": "ashby",
+    "slug": "superhuman",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Notion",
+    "website": "https://www.notion.so",
+    "careers_url": "https://jobs.ashbyhq.com/notion",
+    "detected_ats": "ashby",
+    "slug": "notion",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "PostHog",
+    "website": "https://posthog.com",
+    "careers_url": "https://jobs.ashbyhq.com/posthog",
+    "detected_ats": "ashby",
+    "slug": "posthog",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  },
+  {
+    "company_name": "Sentry",
+    "website": "https://sentry.io",
+    "careers_url": "https://jobs.ashbyhq.com/sentry",
+    "detected_ats": "ashby",
+    "slug": "sentry",
+    "country": "Global",
+    "priority": 1,
+    "enabled": true
+  }
+]
